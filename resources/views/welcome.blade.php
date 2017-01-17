@@ -16,7 +16,7 @@
         <link href="flat-ui-dist/css/flat-ui.css" rel="stylesheet">
 		
 		{{-- Loading Lobibox Notification --}}
-        <link rel="stylesheet" href="lobibox-dist/css/Lobibox.min.css"/>
+        <link rel="stylesheet" href="lobibox-dist/css/lobibox.min.css"/>
 
         <!-- Styles -->
         <style>
@@ -117,7 +117,7 @@
         <script src="flat-ui-dist/js/flat-ui.min.js"></script>
         {{-- Loading Lobibox js --}}
         <script src="lobibox-lib/jquery.1.11.min.js"></script>
-  		<script src="lobibox-dist/js/Lobibox.min.js"></script>
+  		<script src="lobibox-dist/js/lobibox.min.js"></script>
 
   		<script>
 			

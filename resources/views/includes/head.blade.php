@@ -9,7 +9,7 @@
 
 
 {{-- Loading Lobibox Notification --}}
-<link rel="stylesheet" href="lobibox-dist/css/Lobibox.min.css"/>
+<link rel="stylesheet" href="lobibox-dist/css/lobibox.min.css"/>
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
