@@ -15,6 +15,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function()
+{
+    return View::make('pages.home');
+});
+Route::get('about', function()
+{
+    return View::make('pages.about');
+});
+Route::get('projects', function()
+{
+    return View::make('pages.projects');
+});
+Route::get('contact', function()
+{
+    return View::make('pages.contact');
+});
+
+/* Online Judge */
 
 Route::get('saveScript', function () {
 	$param = '#include <stdio.h>
