@@ -68,3 +68,7 @@ Route::get('compareProgram/{script1}/{script2}/{input}', function ($script1, $sc
   return Yusufs\Grader::compareProgram($script1, $script2, $input, 1, 338592);
 
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
