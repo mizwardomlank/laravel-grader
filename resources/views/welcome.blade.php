@@ -86,20 +86,20 @@
                     <li><a href="/projects">Project</a></li>
                     <li><a href="/contact">Contact</a></li>
                 </ul>
-                <p class="navbar-text navbar-right">Signed in as <a class="navbar-link" href="#">Mark Otto</a></p>
+                @if (Route::has('login'))
+                    <ul class="nav navbar-nav navbar-right">
+                        @if (Auth::check())
+                            <li><a href="{{ url('/home') }}">Home</a></li>
+                        @else
+                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a href="{{ url('/register') }}">Register</a></li>
+                        @endif
+                    </ul>
+                @endif
+                {{-- <p class="navbar-text navbar-right">Signed in as <a class="navbar-link" href="#">Mark Otto</a></p> --}}
             </div><!-- /.navbar-collapse -->
         </nav><!-- /navbar -->
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
             
 
             <div class="content">
