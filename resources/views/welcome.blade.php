@@ -127,7 +127,7 @@
 					rounded: true,
 					delay: false,
 					position: 'center top', //or 'center bottom'
-					msg: 'You have got trolled',
+					msg: 'You\'ve got achievement! This will open soon.',
                     img: 'http://eatforum.org/wp-content/themes/eat3/assets/img/logo-circle-orange-text-white.svg'
 	            });
 	        });
