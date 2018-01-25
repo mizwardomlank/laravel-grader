@@ -32,6 +32,12 @@ Route::get('contact', function()
     return View::make('pages.contact');
 });
 
+/* Test Input Online Judge */
+
+Route::get('/test-input', 'ProblemController@index');
+Route::post('/test-input', 'ProblemController@store');
+
+
 /* Online Judge */
 
 Route::get('saveScript', function () {
@@ -41,31 +47,31 @@ int main()
 	printf("Hello World Cuy\n");
 	return 0;
 }'; // here is the script
-  return Yusufs\Grader::saveScript("c", $param);
+  return mizwardomlank\Grader::saveScript("c", $param);
 });
 
 Route::get('compile/{script}', function ($param) {
 	// $param = "script_12031364091415211460.c";
 	
-  return Yusufs\Grader::compile($param);
+  return mizwardomlank\Grader::compile($param);
 });
 
 Route::get('saveInput', function () {
 	$param = "1"; // here is input program
-  return Yusufs\Grader::saveInput($param);
+  return mizwardomlank\Grader::saveInput($param);
 });
 
 Route::get('run/{script}/{input}', function ($script, $input) {
 	// $script = 'script_12031364091415211460.c';
 	// $input = 'input_7204332951415211535.txt';
-  return Yusufs\Grader::run($script, $input, 1, 32000);
+  return mizwardomlank\Grader::run($script, $input, 1, 32000);
 });
 
 Route::get('compareProgram/{script1}/{script2}/{input}', function ($script1, $script2, $input) {
 	// $script1 = 'script_12031364091415211460.c';
 	// $script2 = 'script_12031364091415211460.c';
 	// $input = 'input_7204332951415211535.txt';
-  return Yusufs\Grader::compareProgram($script1, $script2, $input, 1, 338592);
+  return mizwardomlank\Grader::compareProgram($script1, $script2, $input, 1, 338592);
 
 });
 

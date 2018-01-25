@@ -100,8 +100,6 @@
             </div><!-- /.navbar-collapse -->
         </nav><!-- /navbar -->
         <div class="flex-center position-ref full-height">
-            
-
             <div class="content">
                 <div class="title m-b-md">
                     Online Judge </br> <small>Soon.</small>

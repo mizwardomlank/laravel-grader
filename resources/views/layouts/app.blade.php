@@ -11,6 +11,10 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
+    <link href="flat-ui-dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="flat-ui-dist/css/flat-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="lobibox-dist/css/lobibox.min.css"/>
+
     <link href="/css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
@@ -36,7 +40,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Grader') }}
                     </a>
                 </div>
 
@@ -81,6 +85,13 @@
         @yield('content')
     </div>
 
+    {{-- Loading Flat UI js --}}
+    {{-- <script src="flat-ui-dist/js/vendor/jquery.min.js"></script> --}}
+    <script src="flat-ui-dist/js/vendor/video.js"></script>
+    <script src="flat-ui-dist/js/flat-ui.min.js"></script>
+    {{-- Loading Lobibox js --}}
+    <script src="lobibox-lib/jquery.1.11.min.js"></script>
+    <script src="lobibox-dist/js/lobibox.min.js"></script>
     <!-- Scripts -->
     <script src="/js/app.js"></script>
 </body>

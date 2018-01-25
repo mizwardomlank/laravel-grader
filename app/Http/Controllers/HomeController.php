@@ -25,4 +25,25 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    /**
+     * Store a new blog post.
+     *
+     * @param  Request  $request
+     * @return Response
+     */
+    public function store(Request $request)
+    {
+        // $this->validate($request, [
+        //     'title'        => 'required|max:255',
+        //     'slug'         => 'required|unique:problems|max:255',
+        //     'content'      => 'required',
+        //     'sample_input' => 'required',
+        //     'sample_input' => 'required',
+        // ]);
+
+        dd($request->all());
+
+        
+    }
 }
