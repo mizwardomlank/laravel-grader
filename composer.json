@@ -6,8 +6,8 @@
     "type": "project",
     "repositories": [
         {
-        "type": "git",
-        "url": "https://github.com/mizwardomlank/laravel-grader-lib.git"
+            "type": "git",
+            "url": "https://github.com/mizwardomlank/laravel-grader-lib.git"
         }
     ],
     "require": {
