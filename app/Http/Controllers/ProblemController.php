@@ -13,6 +13,13 @@ class ProblemController extends Controller
      */
     public function index()
     {
+         $param = '#include <stdio.h>
+int main()
+{
+    printf("Hello World Cuy\n");
+    return 0;
+}'; // here is the script
+        return \mizwardomlank\Grader::saveScript("c", $param);
         return view('home');
     }
 
