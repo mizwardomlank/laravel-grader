@@ -5,6 +5,7 @@
 /storage/output
 /storage/input
 /storage/compiled
+/vendor
 /.idea
 Homestead.json
 Homestead.yaml
